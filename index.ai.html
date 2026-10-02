@@ -1,0 +1,3363 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="منصة أدوات الذكاء الاصطناعي الاحترافية - حفظ دائم">
+    <title>🔗 منصة أدوات الذكاء الاصطناعي الاحترافية-2025 🔗 </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://www.jrose7.club/favicon.ico' rel='icon' type='image/x-icon'/>
+    <style>
+        /* ============================================================
+           [1] متغيرات CSS - الألوان والثيمات
+           ============================================================ */
+        :root {
+            --dark-bg: #0f0f23;
+            --card-bg: #1a1a2e;
+            --darker-card: #16213e;
+            --primary-color: #c8ff00;
+            --secondary-color: #8b5cf6;
+            --accent-color: #f43f5e;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --info-color: #3b82f6;
+            --text-primary: #ffffff;
+            --text-secondary: #b8b8c8;
+            --text-muted: #6b7280;
+            --border-color: rgba(255, 255, 255, 0.1);
+            --hover-color: rgba(99, 102, 241, 0.1);
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --popover: 0 0% 7%;
+        }
+
+        /* الثيم الفاتح */
+        [data-theme="light"] {
+            --dark-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --darker-card: #f1f5f9;
+            --primary-color: #7c3aed;
+            --secondary-color: #6366f1;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --text-muted: #94a3b8;
+            --border-color: rgba(0, 0, 0, 0.1);
+            --hover-color: rgba(99, 102, 241, 0.05);
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        /* ============================================================
+           [2] تنسيقات الأساس
+           ============================================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-primary);
+            min-height: 100vh;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar { width: 10px; height: 10px; }
+        ::-webkit-scrollbar-track { background: var(--darker-card); }
+        ::-webkit-scrollbar-thumb { background: var(--primary-color); border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--secondary-color); }
+
+        /* ============================================================
+           [3] الهيدر
+           ============================================================ */
+        header {
+            background: linear-gradient(135deg, #8b5cf6, #6366f1);
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            animation: slideDown 0.5s ease;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .header-content {
+            max-width: 1800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .header-title-section {
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .header-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #ffffff;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-subtitle {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* شريط البحث */
+        .search-section {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .search-container {
+            position: relative;
+            flex: 1;
+            min-width: 220px;
+            max-width: 400px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 45px 12px 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            color: white;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .search-input::placeholder { color: rgba(255, 255, 255, 0.7); }
+
+        .search-input:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.25);
+            border-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+        }
+
+        .search-btn {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.8);
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* أزرار الهيدر */
+		
+		        /* الساعة في الهيدر */
+        .header-clock {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+			background:#c8ff00;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 8px 16px;
+            border-radius: 25px;
+            color:#ff2200;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: 'Consolas', 'Segoe UI', monospace;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-clock:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: scale(1.05);
+        }
+
+        .header-clock i {
+            font-size: 15px;
+            opacity: 0.95;
+            animation: clockPulse 2s infinite;
+        }
+
+        @keyframes clockPulse {
+            0%, 100% { opacity: 0.95; }
+            50% { opacity: 0.5; }
+        }
+
+        @media (max-width: 768px) {
+            .header-clock {
+                font-size: 13px;
+                padding: 6px 12px;
+            }
+        }
+		
+		
+        .header-actions { display: flex; gap: 10px; align-items: center; }
+
+        .header-btn {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            font-size: 16px;
+        }
+
+        .header-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: scale(1.1);
+        }
+
+        /* ============================================================
+           [4] أشرطة الحالة
+           ============================================================ */
+        .storage-status-bar {
+            background: linear-gradient(135deg, #7c3aed, #a855f7);
+            padding: 14px 20px;
+            margin: 20px auto;
+            max-width: 1800px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            box-shadow: 0 5px 20px rgba(168, 85, 247, 0.3);
+            color: white;
+        }
+
+        .storage-status-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 13px;
+        }
+
+        .storage-status-item { display: flex; align-items: center; gap: 8px; }
+        .storage-status-item i { font-size: 15px; opacity: 0.9; }
+        .storage-status-item strong { font-weight: 600; }
+
+        .status-ok { color: #4ade80; }
+        .status-warn { color: #fbbf24; }
+        .status-err { color: #f87171; }
+
+        .storage-status-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+        .storage-status-btn {
+            padding: 8px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.3s;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .storage-status-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .data-status-bar {
+            background: linear-gradient(135deg, #059669, #10b981);
+            padding: 14px 20px;
+            margin: 0 auto 20px;
+            max-width: 1800px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            box-shadow: 0 5px 20px rgba(16, 185, 129, 0.3);
+            color: white;
+        }
+
+        .data-status-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 13px;
+        }
+
+        .data-status-item { display: flex; align-items: center; gap: 8px; }
+        .data-status-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+
+        .data-status-btn {
+            padding: 8px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.3s;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .data-status-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* ============================================================
+           [5] الإحصائيات
+           ============================================================ */
+        .stats-bar {
+            background: var(--card-bg);
+            padding: 20px;
+            margin: 0 auto 20px;
+            max-width: 1800px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            box-shadow: 0 5px 15px var(--shadow-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .stat-item { text-align: center; min-width: 120px; flex: 1; }
+
+        .stat-number {
+            font-size: 15px;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            transition: all 0.3s;
+        }
+
+        .stat-label { font-size: 13px; color: var(--text-secondary); }
+
+        /* ============================================================
+           [6] بطاقات الفئات
+           ============================================================ */
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
+        }
+
+        .categories-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .categories-container.list-view { grid-template-columns: 1fr; }
+
+        .category-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 8px 25px var(--shadow-color);
+            border: 1px solid var(--border-color);
+            max-height: 620px;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s;
+        }
+
+        .category-card:hover {
+            box-shadow: 0 12px 35px var(--shadow-color);
+            transform: translateY(-2px);
+        }
+
+        .category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--primary-color);
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .category-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .category-stats {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .category-actions { display: flex; gap: 5px; }
+
+        .action-btn {
+            padding: 6px 10px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .action-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--dark-bg);
+            transform: translateY(-2px);
+        }
+
+        .tools-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-height: 480px;
+            overflow-y: auto;
+            padding-right: 5px;
+            flex: 1;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .empty-state i {
+            font-size: 48px;
+            margin-bottom: 15px;
+            opacity: 0.5;
+            color: var(--primary-color);
+        }
+
+        .empty-state p { margin: 5px 0; }
+
+        /* ============================================================
+           [7] عنصر الأداة
+           ============================================================ */
+        .tool-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            background-color: var(--darker-card);
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+            position: relative;
+            gap: 8px;
+        }
+
+        .tool-item:hover {
+            transform: translateX(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 5px 15px rgba(200, 255, 0, 0.15);
+        }
+
+        .tool-item.saved {
+            background-color: rgba(16, 185, 129, 0.1);
+            border-color: var(--success-color);
+        }
+
+        .tool-number {
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 12px;
+            color: var(--dark-bg);
+            flex-shrink: 0;
+        }
+
+        .tool-favicon {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.05);
+            overflow: hidden;
+        }
+
+        .tool-favicon img { width: 100%; height: 100%; object-fit: cover; }
+        .tool-favicon i { font-size: 14px; color: var(--primary-color); }
+
+        .tool-info { flex: 1; min-width: 0; margin-right: 8px; }
+
+        .tool-name {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 3px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: var(--text-primary);
+        }
+
+        .tool-url {
+            font-size: 10px;
+            color: var(--text-muted);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            direction: ltr;
+            text-align: right;
+        }
+
+        .tool-meta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 11px;
+            color: var(--text-secondary);
+            margin-top: 3px;
+        }
+
+        .star { color: #ffc107; font-size: 10px; }
+        .star.empty { color: var(--text-muted); }
+
+        .tool-tags { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 5px; }
+
+        .tag {
+            padding: 2px 8px;
+            background: rgba(99, 102, 241, 0.2);
+            border-radius: 12px;
+            font-size: 10px;
+            color: var(--secondary-color);
+        }
+
+        .tag.free { background: rgba(16, 185, 129, 0.2); color: var(--success-color); }
+        .tag.premium { background: rgba(245, 158, 11, 0.2); color: var(--warning-color); }
+
+        .tool-actions { display: flex; gap: 4px; flex-shrink: 0; }
+
+        .tool-btn {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            font-size: 11px;
+        }
+
+        .tool-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--dark-bg);
+            transform: scale(1.15);
+        }
+
+        .tool-btn.saved {
+            background-color: var(--success-color);
+            color: white;
+            border-color: var(--success-color);
+        }
+
+        /* ============================================================
+           [8] الزر العائم FAB
+           ============================================================ */
+        .fab-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .fab-main {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            color: var(--dark-bg);
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(200, 255, 0, 0.4);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .fab-main:hover { transform: scale(1.1) rotate(90deg); }
+
+        .fab-options {
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s;
+        }
+
+        .fab-options.active { opacity: 1; pointer-events: all; }
+
+        .fab-option {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px var(--shadow-color);
+        }
+
+        .fab-option:hover {
+            transform: scale(1.1);
+            background: var(--primary-color);
+            color: var(--dark-bg);
+        }
+
+        /* ============================================================
+           [9] النوافذ المنبثقة
+           ============================================================ */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s;
+            padding: 20px;
+        }
+
+        .modal.active { display: flex; }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            width: 100%;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--border-color);
+            animation: slideUp 0.3s;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .modal-title { font-size: 22px; font-weight: bold; color: var(--primary-color); }
+
+        .close-modal {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            font-size: 18px;
+        }
+
+        .close-modal:hover {
+            background-color: var(--accent-color);
+            color: white;
+            transform: rotate(90deg);
+        }
+
+        .form-group { margin-bottom: 20px; }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .form-label .required { color: var(--accent-color); }
+
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 12px 15px;
+            background-color: var(--darker-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 15px;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+
+        .form-textarea { min-height: 90px; resize: vertical; }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(200, 255, 0, 0.1);
+        }
+
+        .rating-input { display: flex; gap: 8px; font-size: 24px; }
+
+        .rating-input .star {
+            cursor: pointer;
+            color: var(--text-muted);
+            transition: all 0.2s;
+            font-size: 28px;
+        }
+
+        .rating-input .star:hover,
+        .rating-input .star.active {
+            color: #ffc107;
+            transform: scale(1.15);
+        }
+
+        .tag-input-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 10px;
+            background-color: var(--darker-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            min-height: 48px;
+        }
+
+        .tag-input {
+            border: none;
+            background: none;
+            color: var(--text-primary);
+            outline: none;
+            flex: 1;
+            min-width: 120px;
+            font-size: 14px;
+        }
+
+        .tag-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 4px 10px;
+            background: rgba(99, 102, 241, 0.2);
+            border-radius: 12px;
+            font-size: 12px;
+            color: var(--secondary-color);
+        }
+
+        .tag-remove { cursor: pointer; font-weight: bold; font-size: 14px; }
+        .tag-remove:hover { color: var(--accent-color); }
+
+        .form-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--dark-bg);
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px var(--shadow-color);
+        }
+
+        .export-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .export-option {
+            padding: 20px;
+            background: var(--darker-card);
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .export-option:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        .export-option i {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        .export-option span { display: block; font-size: 14px; color: var(--text-primary); }
+
+        .backup-list { max-height: 400px; overflow-y: auto; margin-top: 20px; }
+
+        .backup-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: var(--darker-card);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: all 0.3s;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .backup-item:hover { background: rgba(99, 102, 241, 0.1); }
+
+        .backup-info { flex: 1; min-width: 150px; }
+
+        .backup-date {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: var(--text-primary);
+            font-size: 14px;
+        }
+
+        .backup-details { font-size: 12px; color: var(--text-secondary); }
+        .backup-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
+        .backup-btn {
+            padding: 6px 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .backup-btn:hover { background: var(--primary-color); color: var(--dark-bg); }
+
+        .shortcuts-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .shortcut-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            background: var(--darker-card);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .shortcut-key {
+            background: var(--primary-color);
+            color: var(--dark-bg);
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-family: 'Consolas', monospace;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* ============================================================
+           [10] التنبيهات
+           ============================================================ */
+        .notification {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: linear-gradient(135deg, var(--success-color), #059669);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px var(--shadow-color);
+            z-index: 3000;
+            opacity: 0;
+            transition: all 0.3s;
+            font-weight: 500;
+            max-width: 90%;
+            text-align: center;
+        }
+
+        .notification.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+
+        .notification.error { background: linear-gradient(135deg, var(--accent-color), #dc2626); }
+        .notification.warning { background: linear-gradient(135deg, var(--warning-color), #d97706); }
+        .notification.info { background: linear-gradient(135deg, var(--info-color), #2563eb); }
+
+        /* ============================================================
+           [11] الاستجابة
+           ============================================================ */
+        @media (max-width: 1200px) {
+            .categories-container { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .header-content { flex-direction: column; }
+            .header-title { font-size: 20px; }
+            .search-section { width: 100%; }
+            .categories-container { grid-template-columns: 1fr; }
+            .storage-status-bar, .data-status-bar { flex-direction: column; align-items: flex-start; }
+            .stats-bar { flex-direction: column; }
+            .fab-container { bottom: 20px; right: 20px; }
+            .fab-main { width: 55px; height: 55px; font-size: 22px; }
+            .modal-content { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- ============================================================
+         [1] الهيدر - الشريط العلوي
+         ============================================================ -->
+    <header>
+        <div class="header-content">
+            <div class="header-title-section">
+                <h1 class="header-title">🧠 منصة أدوات الذكاء الاصطناعي الاحترافية</h1>
+                <p class="header-subtitle">🧠 إدارة وتنظيم أفضل أدوات الذكاء الاصطناعي</p>
+            </div>
+            
+            <div class="search-section">
+                <div class="search-container">
+                    <input type="text" class="search-input" id="searchInput" placeholder="ابحث عن أداة...">
+                    <button class="search-btn" onclick="focusSearch()"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="header-actions">
+			        
+			<div class="header-clock" id="headerClock">
+                <i class="fas fa-clock"></i>
+                <span id="clockText">--:--:--</span>
+            </div>
+			
+                <button class="header-btn" onclick="quickExport()" title="حفظ سريع (Ctrl+Shift+S)">
+                    <i class="fas fa-floppy-disk"></i>
+                </button>
+				
+                <button class="header-btn" onclick="openImportModal()" title="استيراد (Ctrl+I)">
+                    <i class="fas fa-upload"></i>
+                </button>
+                <button class="header-btn" onclick="openBackupModal()" title="النسخ الاحتياطية (Ctrl+B)">
+                    <i class="fas fa-database"></i>
+                </button>
+                <button class="header-btn" onclick="toggleTheme()" title="تبديل الثيم (Ctrl+T)">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="header-btn" onclick="openShortcutsModal()" title="اختصارات">
+                    <i class="fas fa-keyboard"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================================
+         [2] شريط حالة التخزين
+         ============================================================ -->
+    <div class="storage-status-bar" id="storageStatusBar">
+        <div class="storage-status-info">
+            <div class="storage-status-item">
+                <i class="fas fa-hdd"></i>
+                <span>التخزين المحلي: <strong id="localStorageStatus" class="status-warn">جاري الفحص...</strong></span>
+            </div>
+            <div class="storage-status-item">
+                <i class="fas fa-link"></i>
+                <span>عدد الروابط: <strong id="totalLinksCount">0</strong></span>
+            </div>
+            <div class="storage-status-item">
+                <i class="fas fa-history"></i>
+                <span>النسخ الاحتياطية: <strong id="backupCount">0</strong></span>
+            </div>
+            <div class="storage-status-item">
+                <i class="fas fa-clock"></i>
+                <span>آخر نسخة: <strong id="lastBackupTime">لا توجد</strong></span>
+            </div>
+        </div>
+        <div class="storage-status-actions">
+            <button class="storage-status-btn" onclick="quickExport()">
+                <i class="fas fa-download"></i>
+                تصدير فوري
+            </button>
+            <button class="storage-status-btn" onclick="createManualBackup()">
+                <i class="fas fa-plus"></i>
+                نسخة احتياطية
+            </button>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         [3] شريط حالة البيانات
+         ============================================================ -->
+    <div class="data-status-bar" id="dataStatusBar">
+        <div class="data-status-info">
+            <div class="data-status-item">
+                <i class="fas fa-database"></i>
+                <span>الحفظ التلقائي: <strong id="autoSaveStatus">مفعل</strong></span>
+            </div>
+            <div class="data-status-item">
+                <i class="fas fa-clock"></i>
+                <span>آخر حفظ: <strong id="lastSaveTime">الآن</strong></span>
+            </div>
+            <div class="data-status-item">
+                <i class="fas fa-hdd"></i>
+                <span>حجم البيانات: <strong id="dataSize">0 كيلوبايت</strong></span>
+            </div>
+        </div>
+        <div class="data-status-actions">
+            <button class="data-status-btn" onclick="manualSave()">
+                <i class="fas fa-save"></i>
+                حفظ الآن
+            </button>
+            <button class="data-status-btn" onclick="verifyDataIntegrity()">
+                <i class="fas fa-shield-alt"></i>
+                تحقق
+            </button>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         [4] شريط الإحصائيات
+         ============================================================ -->
+    <div class="stats-bar">
+        <div class="stat-item">
+            <div class="stat-number" id="totalTools">0</div>
+            <div class="stat-label">إجمالي الأدوات 🧠</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number" id="savedTools">0</div>
+            <div class="stat-label">الأدوات المميزة ⭐</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number" id="totalViews">0</div>
+            <div class="stat-label">إجمالي المشاهدات 👁️</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number" id="avgRating">0.0</div>
+            <div class="stat-label">متوسط التقييم ⭐</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number" id="lastUpdate">اليوم</div>
+            <div class="stat-label">آخر تحديث</div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         [5] الفئات - 10 بطاقات
+         ============================================================ -->
+    <div class="container">
+        <div class="categories-container" id="categoriesContainer">
+            
+            <!-- [1] البرمجة وتطوير الواجهات -->
+            <div class="category-card" data-category="programming">
+                <div class="category-header">
+                    <h2 class="category-title">
+                        <i class="fas fa-code"></i>
+                        1-البرمجة وتطوير الواجهات
+                    </h2>
+                    <div class="category-stats">
+                        <span class="tool-count">0 أدوات</span>
+                        <span class="avg-rating">⭐ 0.0</span>
+                    </div>
+                    <div class="category-actions">
+                        <button class="action-btn" onclick="saveAllCategory('programming')" title="تمييز الكل">
+                            <i class="fas fa-star"></i>
+                        </button>
+                        <button class="action-btn" onclick="sortCategory('programming')" title="ترتيب">
+                            <i class="fas fa-sort"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="tools-list" id="programming-list">
+                    <div class="empty-state">
+                        <i class="fas fa-code"></i>
+                        <p>لا توجد أدوات مضافة بعد</p>
+                        <p>اضغط على زر + لإضافة أداة جديدة</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [2] تصميم المواقع والتطبيقات -->
+            <div class="category-card" data-category="design">
+                <div class="category-header">
+                    <h2 class="category-title">
+                        <i class="fas fa-palette"></i>
+                        تصميم المواقع والتطبيقات
+                    </h2>
+                    <div class="category-stats">
+                        <span class="tool-count">0 أدوات</span>
+                        <span class="avg-rating">⭐ 0.0</span>
+                    </div>
+                    <div class="category-actions">
+                        <button class="action-btn" onclick="saveAllCategory('design')" title="تمييز الكل">
+                            <i class="fas fa-star"></i>
+                        </button>
+                        <button class="action-btn" onclick="sortCategory('design')" title="ترتيب">
+                            <i class="fas fa-sort"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="tools-list" id="design-list">
+                    <div class="empty-state">
+                        <i class="fas fa-palette"></i>
+                        <p>لا توجد أدوات مضافة بعد</p>
+                        <p>اضغط على زر + لإضافة أداة جديدة</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [3] الدردشة والكتابة -->
+            <div class="category-card" data-category="chat">
+                <div class="category-header">
+                    <h2 class="category-title">
+                        <i class="fas fa-comments"></i>
+                        الدردشة والكتابة
+                    </h2>
+                    <div class="category-stats">
+                        <span class="tool-count">0 أدوات</span>
+                        <span class="avg-rating">⭐ 0.0</span>
+                    </div>
+                    <div class="category-actions">
+                        <button class="action-btn" onclick="saveAllCategory('chat')" title="تمييز الكل">
+                            <i class="fas fa-star"></i>
+                        </button>
+                        <button class="action-btn" onclick="sortCategory('chat')" title="ترتيب">
+                            <i class="fas fa-sort"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="tools-list" id="chat-list">
+                    <div class="empty-state">
+                        <i class="fas fa-comments"></i>
+                        <p>لا توجد أدوات مضافة بعد</p>
+                        <p>اضغط على زر + لإضافة أداة جديدة</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [4] وكيل الذكاء الاصطناعي -->
+            <div class="category-card" data-category="agent_ai">
+                <div class="category-header">
+                    <h2 class="category-title">
+                        <i class="fas fa-robot"></i>
+                        وكيل الذكاء اصطناعي
+                    </h2>
+                    <div class="category-stats">
+                        <span class="tool-count">0 أدوات</span>
+                        <span class="avg-rating">⭐ 0.0</span>
+                    </div>
+                    <div class="category-actions">
+                        <button class="action-btn" onclick="saveAllCategory('agent_ai')" title="تمييز الكل">
+                            <i class="fas fa-star"></i>
+                        </button>
+                        <button class="action-btn" onclick="sortCategory('agent_ai')" title="ترتيب">
+                            <i class="fas fa-sort"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="tools-list" id="agent_ai-list">
+                    <div class="empty-state">
+                        <i class="fas fa-robot"></i>
+                        <p>لا توجد أدوات مضافة بعد</p>
+                        <p>اضغط على زر + لإضافة أداة جديدة</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [5] البريد الإلكتروني -->
+            <div class="category-card" data-category="email_web">
+                <div class="category-header">
+                    <h2 class="category-title">
+                        <i class="fas fa-envelope"></i>
+                        البريد الإلكتروني
+                    </h2>
+                    <div class="category-stats">
+                        <span class="tool-count">0 أدوات</span>
+                        <span class="avg-rating">⭐ 0.0</span>
+                    </div>
+                    <div class="category-actions">
+                        <button class="action-btn" onclick="saveAllCategory('email_web')" title="تمييز الكل">
+                            <i class="fas fa-star"></i>
+                        </button>
+                        <button class="action-btn" onclick="sortCategory('email_web')" title="ترتيب">
+                            <i class="fas fa-sort"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="tools-list" id="email_web-list">
+                    <div class="empty-state">
+                        <i class="fas fa-envelope"></i>
+                        <p>لا توجد أدوات مضافة بعد</p>
+                        <p>اضغط على زر + لإضافة أداة جديدة</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [6] روابط المواقع -->
+            <div class="category-card" data-category="links">
+                <div class="category-header">
+                    <h2 class="category-title">
+                        <i class="fas fa-link"></i>
+                        روابط المواقع
+                    </h2>
+                    <div class="category-stats">
+                        <span class="tool-count">0 أدوات</span>
+                        <span class="avg-rating">⭐ 0.0</span>
+                    </div>
+                    <div class="category-actions">
+                        <button class="action-btn" onclick="saveAllCategory('links')" title="تمييز الكل">
+                            <i class="fas fa-star"></i>
+                        </button>
+                        <button class="action-btn" onclick="sortCategory('links')" title="ترتيب">
+                            <i class="fas fa-sort"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="tools-list" id="links-list">
+                    <div class="empty-state">
+                        <i class="fas fa-link"></i>
+                        <p>لا توجد أدوات مضافة بعد</p>
+                        <p>اضغط على زر + لإضافة أداة جديدة</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [7] API Keys -->
+            <div class="category-card" data-category="apikey">
+                <div class="category-header">
+                    <h2 class="category-title">
+                        <i class="fas fa-key"></i>
+                        API Keys
+                    </h2>
+                    <div class="category-stats">
+                        <span class="tool-count">0 أدوات</span>
+                        <span class="avg-rating">⭐ 0.0</span>
+                    </div>
+                    <div class="category-actions">
+                        <button class="action-btn" onclick="saveAllCategory('apikey')" title="تمييز الكل">
+                            <i class="fas fa-star"></i>
+                        </button>
+                        <button class="action-btn" onclick="sortCategory('apikey')" title="ترتيب">
+                            <i class="fas fa-sort"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="tools-list" id="apikey-list">
+                    <div class="empty-state">
+                        <i class="fas fa-key"></i>
+                        <p>لا توجد أدوات مضافة بعد</p>
+                        <p>اضغط على زر + لإضافة أداة جديدة</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [8] الصور والفيديوهات -->
+            <div class="category-card" data-category="media">
+                <div class="category-header">
+                    <h2 class="category-title">
+                        <i class="fas fa-image"></i>
+                        الصور والفيديوهات
+                    </h2>
+                    <div class="category-stats">
+                        <span class="tool-count">0 أدوات</span>
+                        <span class="avg-rating">⭐ 0.0</span>
+                    </div>
+                    <div class="category-actions">
+                        <button class="action-btn" onclick="saveAllCategory('media')" title="تمييز الكل">
+                            <i class="fas fa-star"></i>
+                        </button>
+                        <button class="action-btn" onclick="sortCategory('media')" title="ترتيب">
+                            <i class="fas fa-sort"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="tools-list" id="media-list">
+                    <div class="empty-state">
+                        <i class="fas fa-image"></i>
+                        <p>لا توجد أدوات مضافة بعد</p>
+                        <p>اضغط على زر + لإضافة أداة جديدة</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [9] تسويق رقمي -->
+            <div class="category-card" data-category="marketing">
+                <div class="category-header">
+                    <h2 class="category-title">
+                        <i class="fas fa-bullhorn"></i>
+                        تسويق رقمي
+                    </h2>
+                    <div class="category-stats">
+                        <span class="tool-count">0 أدوات</span>
+                        <span class="avg-rating">⭐ 0.0</span>
+                    </div>
+                    <div class="category-actions">
+                        <button class="action-btn" onclick="saveAllCategory('marketing')" title="تمييز الكل">
+                            <i class="fas fa-star"></i>
+                        </button>
+                        <button class="action-btn" onclick="sortCategory('marketing')" title="ترتيب">
+                            <i class="fas fa-sort"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="tools-list" id="marketing-list">
+                    <div class="empty-state">
+                        <i class="fas fa-bullhorn"></i>
+                        <p>لا توجد أدوات مضافة بعد</p>
+                        <p>اضغط على زر + لإضافة أداة جديدة</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [10] الربح من الأنترنت -->
+            <div class="category-card" data-category="make_money">
+                <div class="category-header">
+                    <h2 class="category-title">
+                        <i class="fas fa-money-bill-wave"></i>
+                        الربح من الأنترنت
+                    </h2>
+                    <div class="category-stats">
+                        <span class="tool-count">0 أدوات</span>
+                        <span class="avg-rating">⭐ 0.0</span>
+                    </div>
+                    <div class="category-actions">
+                        <button class="action-btn" onclick="saveAllCategory('make_money')" title="تمييز الكل">
+                            <i class="fas fa-star"></i>
+                        </button>
+                        <button class="action-btn" onclick="sortCategory('make_money')" title="ترتيب">
+                            <i class="fas fa-sort"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="tools-list" id="make_money-list">
+                    <div class="empty-state">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <p>لا توجد أدوات مضافة بعد</p>
+                        <p>اضغط على زر + لإضافة أداة جديدة</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================
+         [6] الزر العائم FAB
+         ============================================================ -->
+    <div class="fab-container">
+        <div class="fab-options" id="fabOptions">
+            <button class="fab-option" onclick="openAddToolModal()" title="إضافة أداة (Ctrl+N)">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button class="fab-option" onclick="quickExport()" title="تصدير سريع">
+                <i class="fas fa-download"></i>
+            </button>
+            <button class="fab-option" onclick="clearAllData()" title="مسح الكل (محمي)">
+                <i class="fas fa-trash"></i>
+            </button>
+        </div>
+        <button class="fab-main" id="fabMain" title="قائمة سريعة">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+
+    <!-- ============================================================
+         [7] نافذة: إضافة/تعديل أداة
+         ============================================================ -->
+    <div class="modal" id="addToolModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle">إضافة أداة جديدة</h3>
+                <button class="close-modal" onclick="closeModal('addToolModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="addToolForm">
+                <div class="form-group">
+                    <label class="form-label">رابط الأداة <span class="required">*</span></label>
+                    <input type="url" class="form-input" id="toolUrl" required placeholder="https://example.com">
+                    <small style="color: var(--text-muted); font-size: 11px; display: block; margin-top: 5px;">
+                        💡 نصيحة: انسخ الرابط (Ctrl+C) قبل فتح هذه النافذة وسيُملأ تلقائياً
+                    </small>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">اسم الأداة <span class="required">*</span></label>
+                    <input type="text" class="form-input" id="toolName" required placeholder="مثال: ChatGPT">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">الوصف <span class="required">*</span></label>
+                    <textarea class="form-textarea" id="toolDescription" required placeholder="اكتب وصفاً موجزاً للأداة..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">رابط مشاهدة الفيديو</label>
+                    <input type="url" class="form-input" id="toolVideoUrl" placeholder="https://youtube.com/watch?v=...">
+                </div>
+                <div class="form-group" style="display: none;">
+                    <label class="form-label">رابط الأيقونة</label>
+                    <input type="url" class="form-input" id="toolIconUrl" placeholder="https://example.com/icon.png">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">اختر الفئة <span class="required">*</span></label>
+                    <select class="form-select" id="toolCategory" required>
+                        <option value="">-- اختر الفئة --</option>
+                        <option value="programming">1-البرمجة وتطوير الواجهات</option>
+                        <option value="agent_ai">وكيل الذكاء اصطناعي</option>
+                        <option value="email_web">البريد الإلكتروني</option>
+                        <option value="design">تصميم المواقع والتطبيقات</option>
+                        <option value="links">روابط المواقع</option>
+                        <option value="apikey">API Keys</option>
+                        <option value="media">الصور والفيديوهات</option>
+                        <option value="chat">الدردشة والكتابة</option>
+                        <option value="marketing">تسويق رقمي</option>
+                        <option value="make_money">الربح من الأنترنت</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">التقييم</label>
+                    <div class="rating-input" id="ratingInput">
+                        <i class="fas fa-star star" data-rating="1"></i>
+                        <i class="fas fa-star star" data-rating="2"></i>
+                        <i class="fas fa-star star" data-rating="3"></i>
+                        <i class="fas fa-star star" data-rating="4"></i>
+                        <i class="fas fa-star star" data-rating="5"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">الوسوم (اضغط Enter للإضافة)</label>
+                    <div class="tag-input-container" id="tagInputContainer">
+                        <input type="text" class="tag-input" id="tagInput" placeholder="مثال: مهم، تعليمي، ترفيهي...">
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('addToolModal')">
+                        <i class="fas fa-times"></i>
+                        إلغاء
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save"></i>
+                        حفظ الأداة
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         [8] نافذة: تصدير البيانات
+         ============================================================ -->
+    <div class="modal" id="exportModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">تصدير البيانات</h3>
+                <button class="close-modal" onclick="closeModal('exportModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <p style="color: var(--text-secondary); margin-bottom: 15px; font-size: 14px;">
+                اختر صيغة التصدير. الأنصح هو <strong>JSON</strong> لأنه يحفظ كل التفاصيل.
+            </p>
+            <div class="export-options">
+                <div class="export-option" onclick="exportData('json')">
+                    <i class="fas fa-file-code"></i>
+                    <span>JSON</span>
+                </div>
+                <div class="export-option" onclick="exportData('csv')">
+                    <i class="fas fa-file-csv"></i>
+                    <span>CSV</span>
+                </div>
+                <div class="export-option" onclick="exportData('html')">
+                    <i class="fas fa-file-code"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="export-option" onclick="exportData('txt')">
+                    <i class="fas fa-file-alt"></i>
+                    <span>TXT</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         [9] نافذة: النسخ الاحتياطية
+         ============================================================ -->
+    <div class="modal" id="backupModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">النسخ الاحتياطية الداخلية</h3>
+                <button class="close-modal" onclick="closeModal('backupModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <p style="color: var(--text-secondary); margin-bottom: 15px; font-size: 13px;">
+                ⚠️ هذه النسخ محفوظة داخل المتصفح. للحماية الكاملة، استخدم "التصدير الفوري" واحفظ الملف على قرصك.
+            </p>
+            <div class="backup-list" id="backupList"></div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         [10] نافذة: الاختصارات
+         ============================================================ -->
+    <div class="modal" id="shortcutsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">⌨️ اختصارات لوحة المفاتيح</h3>
+                <button class="close-modal" onclick="closeModal('shortcutsModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="shortcuts-list">
+                <div class="shortcut-item">
+                    <span>إضافة أداة جديدة</span>
+                    <span class="shortcut-key">Ctrl + N</span>
+                </div>
+                <div class="shortcut-item">
+                    <span>البحث</span>
+                    <span class="shortcut-key">Ctrl + F</span>
+                </div>
+                <div class="shortcut-item">
+                    <span>تصدير سريع ⭐</span>
+                    <span class="shortcut-key">Ctrl + Shift + S</span>
+                </div>
+                <div class="shortcut-item">
+                    <span>تصدير البيانات</span>
+                    <span class="shortcut-key">Ctrl + E</span>
+                </div>
+                <div class="shortcut-item">
+                    <span>استيراد البيانات</span>
+                    <span class="shortcut-key">Ctrl + I</span>
+                </div>
+                <div class="shortcut-item">
+                    <span>النسخ الاحتياطية</span>
+                    <span class="shortcut-key">Ctrl + B</span>
+                </div>
+                <div class="shortcut-item">
+                    <span>تبديل الثيم</span>
+                    <span class="shortcut-key">Ctrl + T</span>
+                </div>
+                <div class="shortcut-item">
+                    <span>مسح الكل (محمي)</span>
+                    <span class="shortcut-key">Ctrl + D</span>
+                </div>
+                <div class="shortcut-item">
+                    <span>حفظ فوري</span>
+                    <span class="shortcut-key">Ctrl + S</span>
+                </div>
+                <div class="shortcut-item">
+                    <span>إغلاق النافذة</span>
+                    <span class="shortcut-key">ESC</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         عناصر مساعدة
+         ============================================================ -->
+    <div class="notification" id="notification"></div>
+    <input type="file" id="importInput" accept=".json" style="display: none;">
+
+   
+     <script>
+// ============================================================
+// [1] المتغيرات العامة
+// ============================================================
+
+// بنية البيانات الرئيسية - تضم كل الفئات
+let categoriesData = {
+    programming: [],
+    design: [],
+    chat: [],
+    agent_ai: [],
+    email_web: [],
+    links: [],
+    apikey: [],
+    media: [],
+    marketing: [],
+    make_money: []
+};
+
+// متغيرات الحالة
+let currentView = 'grid';
+let selectedRating = 0;
+let selectedTags = [];
+let isEditMode = false;
+let editingToolId = null;
+let editingCategory = null;
+let autoSaveInterval = null;
+
+// مفاتيح التخزين
+const STORAGE_KEY = 'aiToolsData';
+const BACKUP_KEY = 'aiToolsBackups';
+const THEME_KEY = 'aiToolsTheme';
+const LAST_BACKUP_KEY = 'aiToolsLastExport';
+
+// ============================================================
+// [2] التهيئة الرئيسية - عند فتح الصفحة
+// ============================================================
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('🚀 بدء تهيئة التطبيق...');
+    
+    initializeApp();
+    setupEventListeners();
+    setupKeyboardShortcuts();
+    setupTagInput();
+    setupRatingInput();
+    setupAutoSave();
+	startClock();           // ← أضف هذا السطر
+});
+
+// ============================================================
+// [3] دالة التهيئة الشاملة
+// ============================================================
+async function initializeApp() {
+    try {
+        loadData();
+        renderAllCategories();
+        updateStatistics();
+        checkTheme();
+        updateStorageStatus();
+        updateDataStatus();
+        updateBackupCount();
+        updateLastBackupTime();
+        checkBackupReminder();
+        
+        let totalTools = 0;
+        Object.values(categoriesData).forEach(tools => {
+            totalTools += tools.length;
+        });
+        
+        if (totalTools === 0) {
+            console.log('ℹ️ لا توجد أدوات محفوظة، التطبيق جاهز للاستخدام');
+            setTimeout(() => {
+                showNotification('💡 مرحباً! اضغط Ctrl+N لإضافة أول أداة', 'info');
+            }, 1000);
+        } else {
+            console.log(`✅ تم تحميل ${totalTools} أداة بنجاح`);
+        }
+        
+    } catch (error) {
+        console.error('❌ خطأ في التهيئة:', error);
+        showNotification('حدث خطأ في التهيئة', 'error');
+    }
+}
+
+// ============================================================
+// [4] نظام التخزين - تحميل وحفظ
+// ============================================================
+
+function loadData() {
+    try {
+        const savedData = localStorage.getItem(STORAGE_KEY);
+        
+        if (savedData) {
+            const parsed = JSON.parse(savedData);
+            
+            Object.keys(categoriesData).forEach(cat => {
+                if (!parsed[cat] || !Array.isArray(parsed[cat])) {
+                    parsed[cat] = [];
+                }
+            });
+            
+            categoriesData = parsed;
+            console.log('✅ تم تحميل البيانات من localStorage');
+            return true;
+        } else {
+            console.log('ℹ️ لا توجد بيانات محفوظة، بدء جديد');
+            return false;
+        }
+    } catch (error) {
+        console.error('❌ خطأ في تحميل البيانات:', error);
+        return tryRestoreFromBackup();
+    }
+}
+
+function tryRestoreFromBackup() {
+    try {
+        const backups = getBackupList();
+        if (backups.length > 0) {
+            categoriesData = JSON.parse(JSON.stringify(backups[0].data));
+            console.log('✅ تم استعادة البيانات من نسخة احتياطية');
+            showNotification('تم استعادة بياناتك من نسخة احتياطية', 'warning');
+            return true;
+        }
+    } catch (e) {
+        console.error('❌ فشل الاستعادة:', e);
+    }
+    return false;
+}
+
+function saveData() {
+    try {
+        const dataStr = JSON.stringify(categoriesData);
+        
+        localStorage.setItem(STORAGE_KEY, dataStr);
+        
+        try {
+            sessionStorage.setItem(STORAGE_KEY, dataStr);
+        } catch (e) {}
+        
+        updateDataStatus();
+        updateStorageStatus();
+        
+        console.log('✅ تم الحفظ بنجاح');
+        return true;
+        
+    } catch (error) {
+        console.error('❌ خطأ في الحفظ:', error);
+        
+        if (error.name === 'QuotaExceededError') {
+            showNotification('⚠️ الذاكرة ممتلئة! صدّر بياناتك فوراً', 'error');
+        } else {
+            showNotification('حدث خطأ أثناء الحفظ', 'error');
+        }
+        return false;
+    }
+}
+
+// ============================================================
+// [5] نظام العرض - رسم الفئات والأدوات
+// ============================================================
+
+function renderAllCategories() {
+    Object.keys(categoriesData).forEach(category => {
+        renderCategory(category);
+        updateCategoryStats(category);
+    });
+}
+
+function renderCategory(category) {
+    const listElement = document.getElementById(`${category}-list`);
+    if (!listElement) return;
+    
+    listElement.innerHTML = '';
+    
+    let tools = [...categoriesData[category]];
+    
+    tools = applyFilters(tools);
+    
+    if (tools.length === 0) {
+        const isFiltering = document.getElementById('searchInput').value.trim() !== '';
+        listElement.innerHTML = `
+            <div class="empty-state">
+                <i class="fas ${getCategoryIcon(category)}"></i>
+                <p>${isFiltering ? 'لا نتائج مطابقة للبحث' : 'لا توجد أدوات مضافة بعد'}</p>
+                <p>${isFiltering ? 'جرّب كلمة أخرى' : 'اضغط على زر + لإضافة أداة جديدة'}</p>
+            </div>
+        `;
+        return;
+    }
+    
+    tools.forEach((tool, index) => {
+        tool.id = index + 1;
+        const toolItem = createToolElement(tool, category);
+        listElement.appendChild(toolItem);
+    });
+}
+
+function applyFilters(tools) {
+    const searchInput = document.getElementById('searchInput');
+    if (!searchInput) return tools;
+    
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    
+    if (!searchTerm) return tools;
+    
+    return tools.filter(tool => {
+        const name = (tool.name || '').toLowerCase();
+        const desc = (tool.description || '').toLowerCase();
+        const url = (tool.url || '').toLowerCase();
+        const tags = (tool.tags || []).join(' ').toLowerCase();
+        
+        return name.includes(searchTerm) ||
+               desc.includes(searchTerm) ||
+               url.includes(searchTerm) ||
+               tags.includes(searchTerm);
+    });
+}
+
+function createToolElement(tool, category) {
+    const div = document.createElement('div');
+    div.className = `tool-item ${tool.saved ? 'saved' : ''}`;
+    div.dataset.toolId = tool.id;
+    div.dataset.category = category;
+    
+    const stars = generateStars(tool.rating || 0);
+    const tags = generateTags(tool.tags || []);
+    const faviconUrl = getFaviconUrl(tool.url);
+    const shortUrl = getShortUrl(tool.url);
+    
+    div.innerHTML = `
+        <div class="tool-number">${tool.id}</div>
+        <div class="tool-favicon">
+            ${faviconUrl ? `<img src="${faviconUrl}" alt="${escapeHtml(tool.name)}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">` : ''}
+            <i class="fas ${getCategoryIcon(category)}" style="${faviconUrl ? 'display:none;' : ''}"></i>
+        </div>
+        <div class="tool-info">
+            <div class="tool-name" title="${escapeHtml(tool.name)}">${escapeHtml(tool.name)}</div>
+            <div class="tool-url" title="${escapeHtml(tool.url)}">${escapeHtml(shortUrl)}</div>
+            <div class="tool-meta">
+                ${tool.rating ? `<div class="tool-rating">${stars}</div>` : ''}
+                ${tool.views ? `<div class="tool-views"><i class="fas fa-eye"></i> ${tool.views}</div>` : ''}
+            </div>
+            ${tags ? `<div class="tool-tags">${tags}</div>` : ''}
+        </div>
+        <div class="tool-actions">
+            <button class="tool-btn ${tool.saved ? 'saved' : ''}" 
+                    onclick="toggleSave('${category}', ${tool.id})" 
+                    title="${tool.saved ? 'إزالة التمييز' : 'تمييز بنجمة'}">
+                <i class="fas fa-star"></i>
+            </button>
+            <button class="tool-btn" 
+                    onclick="visitTool('${category}', ${tool.id})" 
+                    title="فتح الموقع">
+                <i class="fas fa-external-link-alt"></i>
+            </button>
+            <button class="tool-btn" 
+                    onclick="copyUrl('${category}', ${tool.id})" 
+                    title="نسخ الرابط">
+                <i class="fas fa-copy"></i>
+            </button>
+            <button class="tool-btn" 
+                    onclick="editTool('${category}', ${tool.id})" 
+                    title="تعديل">
+                <i class="fas fa-edit"></i>
+            </button>
+            <button class="tool-btn" 
+                    onclick="deleteTool('${category}', ${tool.id})" 
+                    title="حذف">
+                <i class="fas fa-trash"></i>
+            </button>
+        </div>
+    `;
+    
+    return div;
+}
+
+function generateStars(rating) {
+    let stars = '';
+    for (let i = 1; i <= 5; i++) {
+        stars += `<i class="fas fa-star star ${i <= rating ? '' : 'empty'}"></i>`;
+    }
+    return stars;
+}
+
+function generateTags(tags) {
+    if (!tags || tags.length === 0) return '';
+    
+    return tags.map(tag => {
+        let className = 'tag';
+        if (tag === 'مجاني') className += ' free';
+        if (tag === 'مدفوع') className += ' premium';
+        return `<span class="${className}">${escapeHtml(tag)}</span>`;
+    }).join('');
+}
+
+function getCategoryIcon(category) {
+    const icons = {
+        programming: 'fa-code',
+        design: 'fa-palette',
+        chat: 'fa-comments',
+        agent_ai: 'fa-robot',
+        email_web: 'fa-envelope',
+        links: 'fa-link',
+        apikey: 'fa-key',
+        media: 'fa-image',
+        marketing: 'fa-bullhorn',
+        make_money: 'fa-money-bill-wave'
+    };
+    return icons[category] || 'fa-link';
+}
+
+function getCategoryName(category) {
+    const names = {
+        programming: 'البرمجة وتطوير الواجهات',
+        design: 'تصميم المواقع والتطبيقات',
+        chat: 'الدردشة والكتابة',
+        agent_ai: 'وكيل الذكاء الاصطناعي',
+        email_web: 'البريد الإلكتروني',
+        links: 'روابط المواقع',
+        apikey: 'API Keys',
+        media: 'الصور والفيديوهات',
+        marketing: 'تسويق رقمي',
+        make_money: 'الربح من الأنترنت'
+    };
+    return names[category] || 'أخرى';
+}
+
+function getFaviconUrl(url) {
+    try {
+        const domain = new URL(url).hostname;
+        return `https://www.google.com/s2/favicons?domain=${domain}&sz=64`;
+    } catch (e) {
+        return '';
+    }
+}
+
+function getShortUrl(url) {
+    try {
+        const u = new URL(url);
+        let short = u.hostname.replace('www.', '');
+        if (u.pathname && u.pathname !== '/') {
+            short += u.pathname.substring(0, 30);
+            if (u.pathname.length > 30) short += '...';
+        }
+        return short;
+    } catch (e) {
+        return url.substring(0, 40);
+    }
+}
+
+function escapeHtml(text) {
+    if (!text) return '';
+    const div = document.createElement('div');
+    div.textContent = String(text);
+    return div.innerHTML;
+}
+
+function updateCategoryStats(category) {
+    const tools = categoriesData[category];
+    const card = document.querySelector(`[data-category="${category}"]`);
+    if (!card) return;
+    
+    const toolCount = card.querySelector('.tool-count');
+    const avgRating = card.querySelector('.avg-rating');
+    
+    if (toolCount) toolCount.textContent = `${tools.length} أدوات`;
+    
+    if (avgRating) {
+        if (tools.length > 0) {
+            const rated = tools.filter(t => t.rating > 0);
+            if (rated.length > 0) {
+                const total = rated.reduce((sum, tool) => sum + tool.rating, 0);
+                avgRating.textContent = `⭐ ${(total / rated.length).toFixed(1)}`;
+            } else {
+                avgRating.textContent = '⭐ —';
+            }
+        } else {
+            avgRating.textContent = '⭐ 0.0';
+        }
+    }
+}
+
+function updateStatistics() {
+    let totalTools = 0;
+    let savedTools = 0;
+    let totalViews = 0;
+    let totalRating = 0;
+    let ratingCount = 0;
+    
+    Object.values(categoriesData).forEach(tools => {
+        totalTools += tools.length;
+        savedTools += tools.filter(t => t.saved).length;
+        totalViews += tools.reduce((sum, tool) => sum + (tool.views || 0), 0);
+        tools.forEach(tool => {
+            if (tool.rating) {
+                totalRating += tool.rating;
+                ratingCount++;
+            }
+        });
+    });
+    
+    const el = (id) => document.getElementById(id);
+    
+    if (el('totalTools')) el('totalTools').textContent = totalTools;
+    if (el('savedTools')) el('savedTools').textContent = savedTools;
+    if (el('totalViews')) el('totalViews').textContent = totalViews;
+    if (el('avgRating')) el('avgRating').textContent = ratingCount > 0 ? (totalRating / ratingCount).toFixed(1) : '0.0';
+    if (el('totalLinksCount')) el('totalLinksCount').textContent = totalTools;
+    
+    
+	
+	const now = new Date();
+const dateStr = now.toLocaleDateString('ar-EG-u-nu-latn', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+});
+if (el('lastUpdate')) el('lastUpdate').textContent = dateStr;
+	
+
+	
+	
+	
+}
+
+// ============================================================
+// [6] العمليات على الأدوات
+// ============================================================
+
+function toggleSave(category, toolId) {
+    const tool = categoriesData[category].find(t => t.id === toolId);
+    if (!tool) return;
+    
+    tool.saved = !tool.saved;
+    
+    if (saveData()) {
+        renderCategory(category);
+        updateStatistics();
+        showNotification(tool.saved ? '⭐ تم تمييز الأداة' : 'تم إلغاء التمييز');
+    }
+}
+
+function visitTool(category, toolId) {
+    const tool = categoriesData[category].find(t => t.id === toolId);
+    if (!tool) return;
+    
+    tool.views = (tool.views || 0) + 1;
+    saveData();
+    updateStatistics();
+    
+    window.open(tool.url, '_blank');
+}
+
+function copyUrl(category, toolId) {
+    const tool = categoriesData[category].find(t => t.id === toolId);
+    if (!tool) return;
+    
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(tool.url).then(() => {
+            showNotification('📋 تم نسخ الرابط');
+        }).catch(() => {
+            fallbackCopy(tool.url);
+        });
+    } else {
+        fallbackCopy(tool.url);
+    }
+}
+
+function fallbackCopy(text) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+        document.execCommand('copy');
+        showNotification('📋 تم نسخ الرابط');
+    } catch (e) {
+        showNotification('❌ فشل النسخ', 'error');
+    }
+    document.body.removeChild(textarea);
+}
+
+function editTool(category, toolId) {
+    const tool = categoriesData[category].find(t => t.id === toolId);
+    if (!tool) return;
+    
+    isEditMode = true;
+    editingToolId = toolId;
+    editingCategory = category;
+    
+    document.getElementById('modalTitle').textContent = 'تعديل أداة';
+    document.getElementById('toolUrl').value = tool.url || '';
+    document.getElementById('toolName').value = tool.name || '';
+    document.getElementById('toolDescription').value = tool.description || '';
+    document.getElementById('toolVideoUrl').value = tool.videoUrl || '';
+    document.getElementById('toolIconUrl').value = tool.iconUrl || '';
+    document.getElementById('toolCategory').value = category;
+    
+    selectedRating = tool.rating || 0;
+    updateRatingDisplay();
+    
+    selectedTags = [...(tool.tags || [])];
+    renderTags();
+    
+    openModal('addToolModal');
+}
+
+function deleteTool(category, toolId) {
+    const tool = categoriesData[category].find(t => t.id === toolId);
+    if (!tool) return;
+    
+    if (confirm(`هل أنت متأكد من حذف "${tool.name}"؟\n\nلا يمكن التراجع.`)) {
+        categoriesData[category] = categoriesData[category].filter(t => t.id !== toolId);
+        
+        if (saveData()) {
+            renderCategory(category);
+            updateCategoryStats(category);
+            updateStatistics();
+            showNotification('🗑️ تم حذف الأداة');
+        }
+    }
+}
+
+function saveAllCategory(category) {
+    if (categoriesData[category].length === 0) {
+        showNotification('لا توجد أدوات لتمييزها', 'warning');
+        return;
+    }
+    
+    categoriesData[category].forEach(tool => tool.saved = true);
+    
+    if (saveData()) {
+        renderCategory(category);
+        updateStatistics();
+        showNotification(`⭐ تم تمييز كل أدوات ${getCategoryName(category)}`);
+    }
+}
+
+function sortCategory(category) {
+    categoriesData[category].sort((a, b) => {
+        if (a.saved !== b.saved) return b.saved - a.saved;
+        if ((b.rating || 0) !== (a.rating || 0)) return (b.rating || 0) - (a.rating || 0);
+        return (a.name || '').localeCompare(b.name || '', 'ar');
+    });
+    
+    if (saveData()) {
+        renderCategory(category);
+        showNotification('🔀 تم ترتيب الأدوات');
+    }
+}
+
+// ============================================================
+// [7] نظام التقييم والوسوم
+// ============================================================
+
+function setupRatingInput() {
+    document.querySelectorAll('#ratingInput .star').forEach(star => {
+        star.addEventListener('click', function() {
+            selectedRating = parseInt(this.dataset.rating);
+            updateRatingDisplay();
+        });
+        
+        star.addEventListener('mouseenter', function() {
+            const rating = parseInt(this.dataset.rating);
+            document.querySelectorAll('#ratingInput .star').forEach((s, i) => {
+                s.classList.toggle('active', i < rating);
+            });
+        });
+    });
+    
+    const ratingContainer = document.getElementById('ratingInput');
+    if (ratingContainer) {
+        ratingContainer.addEventListener('mouseleave', () => {
+            updateRatingDisplay();
+        });
+    }
+}
+
+function updateRatingDisplay() {
+    document.querySelectorAll('#ratingInput .star').forEach((star, index) => {
+        star.classList.toggle('active', index < selectedRating);
+    });
+}
+
+function setupTagInput() {
+    const tagInput = document.getElementById('tagInput');
+    if (!tagInput) return;
+    
+    tagInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ',') {
+            e.preventDefault();
+            const tag = this.value.trim();
+            
+            if (tag && !selectedTags.includes(tag)) {
+                selectedTags.push(tag);
+                this.value = '';
+                renderTags();
+            } else if (selectedTags.includes(tag)) {
+                showNotification('هذا الوسم موجود بالفعل', 'warning');
+                this.value = '';
+            }
+        }
+        
+        if (e.key === 'Backspace' && this.value === '' && selectedTags.length > 0) {
+            selectedTags.pop();
+            renderTags();
+        }
+    });
+}
+
+function renderTags() {
+    const container = document.getElementById('tagInputContainer');
+    if (!container) return;
+    
+    const input = document.getElementById('tagInput');
+    container.innerHTML = '';
+    
+    selectedTags.forEach(tag => {
+        const tagEl = document.createElement('div');
+        tagEl.className = 'tag-item';
+        tagEl.innerHTML = `
+            <span>${escapeHtml(tag)}</span>
+            <span class="tag-remove" onclick="removeTag('${escapeHtml(tag)}')">×</span>
+        `;
+        container.appendChild(tagEl);
+    });
+    
+    container.appendChild(input);
+}
+
+function removeTag(tag) {
+    selectedTags = selectedTags.filter(t => t !== tag);
+    renderTags();
+}
+
+// ============================================================
+// [8] النوافذ المنبثقة
+// ============================================================
+
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) modal.classList.add('active');
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) modal.classList.remove('active');
+    
+    if (modalId === 'addToolModal') {
+        setTimeout(() => {
+            resetAddToolForm();
+        }, 300);
+    }
+}
+
+function resetAddToolForm() {
+    const form = document.getElementById('addToolForm');
+    if (form) form.reset();
+    
+    document.getElementById('modalTitle').textContent = 'إضافة أداة جديدة';
+    
+    selectedRating = 0;
+    selectedTags = [];
+    updateRatingDisplay();
+    renderTags();
+    
+    isEditMode = false;
+    editingToolId = null;
+    editingCategory = null;
+    
+    const fabMain = document.getElementById('fabMain');
+    if (fabMain) fabMain.innerHTML = '<i class="fas fa-plus"></i>';
+    const fabOptions = document.getElementById('fabOptions');
+    if (fabOptions) fabOptions.classList.remove('active');
+}
+
+function openAddToolModal() {
+    isEditMode = false;
+    editingToolId = null;
+    editingCategory = null;
+    
+    document.getElementById('modalTitle').textContent = 'إضافة أداة جديدة';
+    
+    tryAutoFillFromClipboard();
+    
+    openModal('addToolModal');
+    
+    const fabOptions = document.getElementById('fabOptions');
+    if (fabOptions) fabOptions.classList.remove('active');
+    const fabMain = document.getElementById('fabMain');
+    if (fabMain) fabMain.innerHTML = '<i class="fas fa-plus"></i>';
+}
+
+async function tryAutoFillFromClipboard() {
+    try {
+        if (navigator.clipboard && navigator.clipboard.readText) {
+            const text = await navigator.clipboard.readText();
+            
+            if (text && (text.startsWith('http://') || text.startsWith('https://'))) {
+                const urlField = document.getElementById('toolUrl');
+                if (urlField && !urlField.value) {
+                    urlField.value = text;
+                    
+                    try {
+                        const domain = new URL(text).hostname.replace('www.', '');
+                        const nameField = document.getElementById('toolName');
+                        if (nameField && !nameField.value) {
+                            const parts = domain.split('.');
+                            const mainPart = parts[0] || domain;
+                            nameField.value = mainPart.charAt(0).toUpperCase() + mainPart.slice(1);
+                        }
+                    } catch (e) {}
+                    
+                    showNotification('📋 تم لصق الرابط من الحافظة', 'info');
+                }
+            }
+        }
+    } catch (e) {
+        console.log('لا يمكن الوصول للحافظة تلقائياً');
+    }
+}
+
+function openImportModal() {
+    document.getElementById('importInput').click();
+}
+
+function openBackupModal() {
+    renderBackupList();
+    openModal('backupModal');
+}
+
+function openShortcutsModal() {
+    openModal('shortcutsModal');
+}
+
+function openExportModal() {
+    openModal('exportModal');
+}
+
+function focusSearch() {
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) searchInput.focus();
+}
+
+// ============================================================
+// [9] الثيم
+// ============================================================
+
+function toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme') || 'dark';
+    const newTheme = current === 'light' ? 'dark' : 'light';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem(THEME_KEY, newTheme);
+    
+    const icon = document.getElementById('themeIcon');
+    if (icon) {
+        icon.className = newTheme === 'light' ? 'fas fa-sun' : 'fas fa-moon';
+    }
+    
+    showNotification(newTheme === 'light' ? '☀️ الثيم الفاتح' : '🌙 الثيم الداكن');
+}
+
+function checkTheme() {
+    const saved = localStorage.getItem(THEME_KEY) || 'dark';
+    document.documentElement.setAttribute('data-theme', saved);
+    
+    const icon = document.getElementById('themeIcon');
+    if (icon) {
+        icon.className = saved === 'light' ? 'fas fa-sun' : 'fas fa-moon';
+    }
+}
+
+// ============================================================
+// [10] الإشعارات
+// ============================================================
+
+function showNotification(message, type = 'success') {
+    const notification = document.getElementById('notification');
+    if (!notification) return;
+    
+    notification.textContent = message;
+    notification.className = `notification show ${type}`;
+    
+    if (notification._timer) clearTimeout(notification._timer);
+    
+    notification._timer = setTimeout(() => {
+        notification.classList.remove('show');
+    }, 3000);
+}
+
+// ============================================================
+// [11] حالة التخزين والبيانات
+// ============================================================
+
+function updateStorageStatus() {
+    const el = document.getElementById('localStorageStatus');
+    if (!el) return;
+    
+    try {
+        const data = localStorage.getItem(STORAGE_KEY);
+        if (data) {
+            const size = new Blob([data]).size;
+            el.textContent = `متوفر (${formatFileSize(size)})`;
+            el.className = 'status-ok';
+        } else {
+            el.textContent = 'فارغ';
+            el.className = 'status-warn';
+        }
+    } catch (e) {
+        el.textContent = 'خطأ';
+        el.className = 'status-err';
+    }
+}
+
+function updateDataStatus() {
+    const now = new Date();
+    const timeStr = now.toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' });
+    
+    const lastSave = document.getElementById('lastSaveTime');
+    if (lastSave) lastSave.textContent = timeStr;
+    
+    try {
+        const data = localStorage.getItem(STORAGE_KEY) || '{}';
+        const size = new Blob([data]).size;
+        
+        const dataSize = document.getElementById('dataSize');
+        if (dataSize) dataSize.textContent = formatFileSize(size);
+    } catch (e) {}
+}
+
+function updateBackupCount() {
+    try {
+        const backups = getBackupList();
+        const count = document.getElementById('backupCount');
+        if (count) count.textContent = backups.length;
+    } catch (e) {}
+}
+
+function updateLastBackupTime() {
+    const last = localStorage.getItem(LAST_BACKUP_KEY);
+    const el = document.getElementById('lastBackupTime');
+    if (!el) return;
+    
+    if (last) {
+        el.textContent = formatRelativeTime(parseInt(last));
+    } else {
+        el.textContent = 'لا توجد';
+    }
+}
+
+function formatFileSize(bytes) {
+    if (bytes < 1024) return `${bytes} بايت`;
+    if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} ك.ب`;
+    return `${(bytes / (1024 * 1024)).toFixed(1)} م.ب`;
+}
+
+function formatRelativeTime(timestamp) {
+    const diff = Date.now() - timestamp;
+    const minutes = Math.floor(diff / 60000);
+    const hours = Math.floor(diff / 3600000);
+    const days = Math.floor(diff / 86400000);
+    
+    if (minutes < 1) return 'الآن';
+    if (minutes < 60) return `منذ ${minutes} دقيقة`;
+    if (hours < 24) return `منذ ${hours} ساعة`;
+    if (days < 30) return `منذ ${days} يوم`;
+    return new Date(timestamp).toLocaleDateString('ar-EG');
+}
+
+function formatDate(timestamp) {
+    const d = new Date(timestamp);
+    return d.toLocaleString('ar-EG', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+}
+
+function manualSave() {
+    if (saveData()) {
+        showNotification('✅ تم الحفظ بنجاح');
+    }
+}
+
+function verifyDataIntegrity() {
+    try {
+        const data = localStorage.getItem(STORAGE_KEY);
+        
+        if (!data) {
+            showNotification('⚠️ لا توجد بيانات محفوظة', 'warning');
+            return;
+        }
+        
+        const parsed = JSON.parse(data);
+        let totalTools = 0;
+        Object.values(parsed).forEach(tools => {
+            if (Array.isArray(tools)) totalTools += tools.length;
+        });
+        
+        showNotification(`✅ البيانات سليمة — ${totalTools} أداة`, 'success');
+    } catch (e) {
+        showNotification('❌ البيانات تالفة!', 'error');
+    }
+}
+
+// ============================================================
+// [12] الحفظ التلقائي
+// ============================================================
+
+function setupAutoSave() {
+    autoSaveInterval = setInterval(() => {
+        saveData();
+        console.log('💾 حفظ تلقائي');
+    }, 30 * 60 * 1000);
+    
+    window.addEventListener('beforeunload', () => {
+        try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(categoriesData));
+        } catch (e) {}
+    });
+    
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') {
+            saveData();
+        }
+    });
+}
+
+function checkBackupReminder() {
+    const last = localStorage.getItem(LAST_BACKUP_KEY);
+    
+    if (!last) return;
+    
+    const daysSince = (Date.now() - parseInt(last)) / 86400000;
+    
+    if (daysSince >= 7) {
+        setTimeout(() => {
+            const doExport = confirm(
+                `⚠️ مرت ${Math.floor(daysSince)} أيام بدون نسخة احتياطية!\n\n` +
+                `إذا مُسحت بيانات المتصفح، ستفقد كل روابطك.\n\n` +
+                `هل تريد تصدير نسخة الآن؟`
+            );
+            if (doExport) quickExport();
+        }, 3000);
+    }
+}
+
+// ============================================================
+// [13] نظام النسخ الاحتياطية الداخلية
+// ============================================================
+
+function getBackupList() {
+    try {
+        const backups = JSON.parse(localStorage.getItem(BACKUP_KEY) || '[]');
+        return backups.sort((a, b) => b.timestamp - a.timestamp);
+    } catch (e) {
+        console.error('خطأ في جلب قائمة النسخ الاحتياطية:', e);
+        return [];
+    }
+}
+
+function createBackup() {
+    try {
+        const backups = getBackupList();
+        
+        const newBackup = {
+            timestamp: Date.now(),
+            data: JSON.parse(JSON.stringify(categoriesData)),
+            size: JSON.stringify(categoriesData).length
+        };
+        
+        if (backups.length > 0) {
+            const lastBackup = backups[0];
+            const lastDataStr = JSON.stringify(lastBackup.data);
+            const newDataStr = JSON.stringify(newBackup.data);
+            
+            if (lastDataStr === newDataStr) {
+                console.log('ℹ️ لا تغيير — لم يتم إنشاء نسخة مكررة');
+                return true;
+            }
+        }
+        
+        backups.unshift(newBackup);
+        
+        if (backups.length > 10) {
+            backups.length = 10;
+        }
+        
+        localStorage.setItem(BACKUP_KEY, JSON.stringify(backups));
+        updateBackupCount();
+        console.log('✅ تم إنشاء نسخة احتياطية جديدة');
+        return true;
+    } catch (error) {
+        console.error('❌ خطأ في إنشاء نسخة احتياطية:', error);
+        return false;
+    }
+}
+
+function createManualBackup() {
+    if (createBackup()) {
+        showNotification('✅ تم إنشاء نسخة احتياطية يدوية');
+        updateBackupCount();
+    } else {
+        showNotification('❌ فشل إنشاء النسخة الاحتياطية', 'error');
+    }
+}
+
+function restoreFromBackup(timestamp) {
+    try {
+        const backups = getBackupList();
+        const backup = backups.find(b => b.timestamp === timestamp);
+        
+        if (!backup) {
+            showNotification('النسخة الاحتياطية غير موجودة', 'error');
+            return false;
+        }
+        
+        if (!confirm(`هل تريد استعادة النسخة من:\n${formatDate(timestamp)}؟\n\nسيتم استبدال البيانات الحالية.`)) {
+            return false;
+        }
+        
+        categoriesData = JSON.parse(JSON.stringify(backup.data));
+        
+        if (saveData()) {
+            renderAllCategories();
+            updateStatistics();
+            closeModal('backupModal');
+            showNotification('✅ تم استعادة النسخة بنجاح');
+            return true;
+        }
+        
+        return false;
+    } catch (error) {
+        console.error('❌ خطأ في الاستعادة:', error);
+        showNotification('حدث خطأ أثناء الاستعادة', 'error');
+        return false;
+    }
+}
+
+function deleteBackup(timestamp) {
+    if (!confirm('هل تريد حذف هذه النسخة؟')) return false;
+    
+    try {
+        let backups = getBackupList();
+        backups = backups.filter(b => b.timestamp !== timestamp);
+        localStorage.setItem(BACKUP_KEY, JSON.stringify(backups));
+        updateBackupCount();
+        renderBackupList();
+        showNotification('✅ تم حذف النسخة');
+        return true;
+    } catch (error) {
+        console.error('❌ خطأ في الحذف:', error);
+        showNotification('حدث خطأ أثناء الحذف', 'error');
+        return false;
+    }
+}
+
+function downloadBackup(timestamp) {
+    try {
+        const backups = getBackupList();
+        const backup = backups.find(b => b.timestamp === timestamp);
+        
+        if (!backup) {
+            showNotification('النسخة غير موجودة', 'error');
+            return;
+        }
+        
+        const data = {
+            categories: backup.data,
+            exportDate: new Date(timestamp).toISOString(),
+            version: '2.0',
+            type: 'backup'
+        };
+        
+        const dataStr = JSON.stringify(data, null, 2);
+        const blob = new Blob([dataStr], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `ai-tools-backup-${new Date(timestamp).toISOString().slice(0, 10)}.json`;
+        a.click();
+        
+        URL.revokeObjectURL(url);
+        showNotification('✅ تم تنزيل النسخة');
+    } catch (error) {
+        console.error('❌ خطأ في التنزيل:', error);
+        showNotification('حدث خطأ أثناء التنزيل', 'error');
+    }
+}
+
+function renderBackupList() {
+    const backupList = document.getElementById('backupList');
+    if (!backupList) return;
+    
+    const backups = getBackupList();
+    
+    if (backups.length === 0) {
+        backupList.innerHTML = `
+            <div class="empty-state">
+                <i class="fas fa-database"></i>
+                <p>لا توجد نسخ احتياطية</p>
+                <p>سيتم إنشاء نسخ تلقائياً مع كل حفظ</p>
+            </div>
+        `;
+        return;
+    }
+    
+    backupList.innerHTML = '';
+    
+    backups.forEach(backup => {
+        const item = document.createElement('div');
+        item.className = 'backup-item';
+        
+        const totalTools = Object.values(backup.data).reduce((sum, tools) => 
+            sum + (Array.isArray(tools) ? tools.length : 0), 0);
+        
+        item.innerHTML = `
+            <div class="backup-info">
+                <div class="backup-date">${formatDate(backup.timestamp)}</div>
+                <div class="backup-details">
+                    الحجم: ${formatFileSize(backup.size)} | الأدوات: ${totalTools}
+                </div>
+            </div>
+            <div class="backup-actions">
+                <button class="backup-btn" onclick="restoreFromBackup(${backup.timestamp})">
+                    <i class="fas fa-undo"></i> استعادة
+                </button>
+                <button class="backup-btn" onclick="downloadBackup(${backup.timestamp})">
+                    <i class="fas fa-download"></i> تنزيل
+                </button>
+                <button class="backup-btn" onclick="deleteBackup(${backup.timestamp})">
+                    <i class="fas fa-trash"></i> حذف
+                </button>
+            </div>
+        `;
+        
+        backupList.appendChild(item);
+    });
+}
+
+// ============================================================
+// [14] التصدير والاستيراد
+// ============================================================
+
+function quickExport() {
+    try {
+        const data = {
+            categories: categoriesData,
+            exportDate: new Date().toISOString(),
+            version: '2.0',
+            totalTools: Object.values(categoriesData).reduce((sum, tools) => sum + tools.length, 0)
+        };
+        
+        const dataStr = JSON.stringify(data, null, 2);
+        const blob = new Blob([dataStr], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        
+        const date = new Date().toISOString().slice(0, 10);
+        const time = new Date().toTimeString().slice(0, 5).replace(':', '-');
+        
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `ai-tools-${date}-${time}.json`;
+        a.click();
+        
+        URL.revokeObjectURL(url);
+        
+        localStorage.setItem(LAST_BACKUP_KEY, Date.now().toString());
+        updateLastBackupTime();
+        
+        showNotification('✅ تم تصدير نسخة — احفظها في مكان آمن!');
+    } catch (error) {
+        console.error('❌ خطأ في التصدير:', error);
+        showNotification('حدث خطأ أثناء التصدير', 'error');
+    }
+}
+
+function exportData(format) {
+    const data = {
+        categories: categoriesData,
+        exportDate: new Date().toISOString(),
+        version: '2.0'
+    };
+    
+    switch (format) {
+        case 'json':
+            downloadJSON(data);
+            break;
+        case 'csv':
+            downloadCSV(data);
+            break;
+        case 'html':
+            downloadHTML(data);
+            break;
+        case 'txt':
+            downloadTXT(data);
+            break;
+    }
+    
+    localStorage.setItem(LAST_BACKUP_KEY, Date.now().toString());
+    updateLastBackupTime();
+    
+    closeModal('exportModal');
+    showNotification(`✅ تم التصدير بصيغة ${format.toUpperCase()}`);
+}
+
+function downloadJSON(data) {
+    const dataStr = JSON.stringify(data, null, 2);
+    const blob = new Blob([dataStr], { type: 'application/json;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `ai-tools-${Date.now()}.json`;
+    a.click();
+    
+    URL.revokeObjectURL(url);
+}
+
+function downloadCSV(data) {
+    let csv = '\uFEFF';
+    csv += 'الفئة,الاسم,الوصف,الرابط,التقييم,المشاهدات,الوسوم\n';
+    
+    Object.keys(data.categories).forEach(category => {
+        data.categories[category].forEach(tool => {
+            const name = (tool.name || '').replace(/"/g, '""');
+            const desc = (tool.description || '').replace(/"/g, '""');
+            const tags = (tool.tags || []).join(';');
+            
+            csv += `"${getCategoryName(category)}","${name}","${desc}","${tool.url}","${tool.rating || 0}","${tool.views || 0}","${tags}"\n`;
+        });
+    });
+    
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `ai-tools-${Date.now()}.csv`;
+    link.click();
+    URL.revokeObjectURL(link.href);
+}
+
+function downloadHTML(data) {
+    let html = `<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>أدواتي - تصدير</title>
+<style>
+body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+h1 { color: #333; }
+.category { background: white; margin: 20px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.category h2 { color: #6366f1; border-bottom: 2px solid #6366f1; padding-bottom: 10px; }
+.tool { padding: 10px; border-bottom: 1px solid #eee; }
+.tool:last-child { border-bottom: none; }
+.tool a { color: #6366f1; text-decoration: none; font-weight: bold; }
+.tool a:hover { text-decoration: underline; }
+.tool .desc { color: #666; font-size: 14px; margin-top: 5px; }
+.tool .meta { color: #999; font-size: 12px; margin-top: 5px; }
+</style>
+</head>
+<body>
+<h1>📚 قائمة أدواتي (${new Date().toLocaleDateString('ar-EG')})</h1>
+`;
+    
+    Object.keys(data.categories).forEach(category => {
+        const tools = data.categories[category];
+        if (tools.length === 0) return;
+        
+        html += `<div class="category"><h2>${getCategoryName(category)} (${tools.length})</h2>`;
+        
+        tools.forEach(tool => {
+            html += `
+            <div class="tool">
+                <a href="${tool.url}" target="_blank">${escapeHtml(tool.name)}</a>
+                <div class="desc">${escapeHtml(tool.description)}</div>
+                <div class="meta">⭐ ${tool.rating || 0}/5 | 👁️ ${tool.views || 0}</div>
+            </div>`;
+        });
+        
+        html += `</div>`;
+    });
+    
+    html += `</body></html>`;
+    
+    const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `ai-tools-${Date.now()}.html`;
+    link.click();
+    URL.revokeObjectURL(link.href);
+}
+
+function downloadTXT(data) {
+    let content = `📚 قائمة أدواتي\n`;
+    content += `تاريخ التصدير: ${new Date().toLocaleString('ar-EG')}\n`;
+    content += `${'='.repeat(50)}\n\n`;
+    
+    Object.keys(data.categories).forEach(category => {
+        const tools = data.categories[category];
+        if (tools.length === 0) return;
+        
+        content += `\n📁 ${getCategoryName(category)} (${tools.length} أدوات)\n`;
+        content += `${'-'.repeat(40)}\n`;
+        
+        tools.forEach((tool, i) => {
+            content += `\n${i + 1}. ${tool.name}\n`;
+            content += `   🔗 ${tool.url}\n`;
+            content += `   📝 ${tool.description}\n`;
+            if (tool.rating) content += `   ⭐ التقييم: ${tool.rating}/5\n`;
+            if (tool.views) content += `   👁️ المشاهدات: ${tool.views}\n`;
+            if (tool.tags && tool.tags.length) content += `   🏷️ ${tool.tags.join(', ')}\n`;
+        });
+        
+        content += `\n`;
+    });
+    
+    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `ai-tools-${Date.now()}.txt`;
+    link.click();
+    URL.revokeObjectURL(link.href);
+}
+
+// ============================================================
+// [15] الاستيراد
+// ============================================================
+
+function importData(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+    
+    const reader = new FileReader();
+    
+    reader.onload = function(e) {
+        try {
+            const data = JSON.parse(e.target.result);
+            
+            const importedData = data.categories || data;
+            
+            if (!importedData || typeof importedData !== 'object') {
+                throw new Error('الملف غير صالح');
+            }
+            
+            const replace = confirm(
+                'هل تريد استبدال البيانات الحالية؟\n\n' +
+                'موافق = استبدال\n' +
+                'إلغاء = دمج مع البيانات الحالية'
+            );
+            
+            let importedCount = 0;
+            
+            if (replace) {
+                Object.keys(categoriesData).forEach(cat => {
+                    if (importedData[cat] && Array.isArray(importedData[cat])) {
+                        categoriesData[cat] = importedData[cat];
+                        importedCount += importedData[cat].length;
+                    } else {
+                        categoriesData[cat] = [];
+                    }
+                });
+            } else {
+                Object.keys(importedData).forEach(cat => {
+                    if (categoriesData[cat] && Array.isArray(importedData[cat])) {
+                        importedData[cat].forEach(tool => {
+                            const exists = categoriesData[cat].some(t => t.url === tool.url);
+                            if (!exists) {
+                                tool.id = Date.now() + Math.random();
+                                categoriesData[cat].push(tool);
+                                importedCount++;
+                            }
+                        });
+                    }
+                });
+            }
+            
+            if (saveData()) {
+                renderAllCategories();
+                updateStatistics();
+                showNotification(`✅ تم استيراد ${importedCount} أداة بنجاح`);
+            }
+            
+        } catch (error) {
+            console.error('❌ خطأ في الاستيراد:', error);
+            showNotification('❌ الملف غير صالح أو تالف', 'error');
+        }
+    };
+    
+    reader.onerror = function() {
+        showNotification('❌ فشل قراءة الملف', 'error');
+    };
+    
+    reader.readAsText(file);
+    
+    event.target.value = '';
+}
+
+// ============================================================
+// [16] مسح كل البيانات (محمي)
+// ============================================================
+
+function clearAllData() {
+    createBackup();
+    
+    const confirmed = prompt(
+        '⚠️ تحذير: سيتم مسح جميع البيانات!\n\n' +
+        '✅ تم إنشاء نسخة احتياطية تلقائية (يمكنك استعادتها).\n\n' +
+        'اكتب كلمة DELETE بالأحرف الكبيرة للتأكيد:'
+    );
+    
+    if (confirmed === 'DELETE') {
+        Object.keys(categoriesData).forEach(category => {
+            categoriesData[category] = [];
+        });
+        
+        if (saveData()) {
+            renderAllCategories();
+            updateStatistics();
+            showNotification('🗑️ تم مسح كل البيانات — يمكنك الاستعادة من النسخة الاحتياطية');
+        }
+    } else if (confirmed !== null) {
+        showNotification('تم إلغاء العملية', 'warning');
+    }
+}
+
+// ============================================================
+// [17] المستمعون الرئيسيون
+// ============================================================
+
+function setupEventListeners() {
+    
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', function() {
+            renderAllCategories();
+        });
+    }
+    
+    const fabMain = document.getElementById('fabMain');
+    if (fabMain) {
+        fabMain.addEventListener('click', function() {
+            const options = document.getElementById('fabOptions');
+            if (!options) return;
+            
+            options.classList.toggle('active');
+            
+            if (options.classList.contains('active')) {
+                this.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                this.innerHTML = '<i class="fas fa-plus"></i>';
+            }
+        });
+    }
+    
+    const addToolForm = document.getElementById('addToolForm');
+    if (addToolForm) {
+        addToolForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const category = document.getElementById('toolCategory').value;
+            if (!category) {
+                showNotification('الرجاء اختيار الفئة', 'error');
+                return;
+            }
+            
+            const url = document.getElementById('toolUrl').value.trim();
+            const name = document.getElementById('toolName').value.trim();
+            const description = document.getElementById('toolDescription').value.trim();
+            
+            if (!url || !name || !description) {
+                showNotification('الرجاء ملء جميع الحقول المطلوبة', 'error');
+                return;
+            }
+            
+            const faviconUrl = getFaviconUrl(url);
+            
+            if (isEditMode && editingToolId !== null && editingCategory) {
+                const toolIndex = categoriesData[editingCategory].findIndex(t => t.id === editingToolId);
+                
+                if (toolIndex !== -1) {
+                    const updatedTool = {
+                        ...categoriesData[editingCategory][toolIndex],
+                        name: name,
+                        description: description,
+                        url: url,
+                        videoUrl: document.getElementById('toolVideoUrl').value.trim(),
+                        iconUrl: document.getElementById('toolIconUrl').value.trim(),
+                        faviconUrl: faviconUrl,
+                        rating: selectedRating,
+                        tags: [...selectedTags]
+                    };
+                    
+                    if (editingCategory !== category) {
+                        categoriesData[editingCategory].splice(toolIndex, 1);
+                        categoriesData[category].push(updatedTool);
+                        
+                        renderCategory(editingCategory);
+                        updateCategoryStats(editingCategory);
+                    } else {
+                        categoriesData[editingCategory][toolIndex] = updatedTool;
+                    }
+                    
+                    renderCategory(category);
+                    updateCategoryStats(category);
+                }
+                
+                if (saveData()) {
+                    updateStatistics();
+                    closeModal('addToolModal');
+                    showNotification(`✅ تم تحديث "${name}"`);
+                }
+                
+            } else {
+                const newTool = {
+                    id: Date.now(),
+                    name: name,
+                    description: description,
+                    url: url,
+                    videoUrl: document.getElementById('toolVideoUrl').value.trim(),
+                    iconUrl: document.getElementById('toolIconUrl').value.trim(),
+                    faviconUrl: faviconUrl,
+                    rating: selectedRating,
+                    tags: [...selectedTags],
+                    saved: false,
+                    views: 0,
+                    addedDate: new Date().toLocaleDateString('ar-EG')
+                };
+                
+                categoriesData[category].push(newTool);
+                
+                if (categoriesData[category].length > 100) {
+                    categoriesData[category].shift();
+                }
+                
+                if (saveData()) {
+                    renderCategory(category);
+                    updateCategoryStats(category);
+                    updateStatistics();
+                    closeModal('addToolModal');
+                    showNotification(`✅ تمت إضافة "${name}"`);
+                }
+            }
+        });
+    }
+    
+    const importInput = document.getElementById('importInput');
+    if (importInput) {
+        importInput.addEventListener('change', importData);
+    }
+    
+    document.querySelectorAll('.modal').forEach(modal => {
+        modal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+                if (this.id === 'addToolModal') {
+                    setTimeout(resetAddToolForm, 300);
+                }
+            }
+        });
+    });
+}
+
+// ============================================================
+// [18] اختصارات لوحة المفاتيح
+// ============================================================
+
+function setupKeyboardShortcuts() {
+    document.addEventListener('keydown', function(e) {
+        
+        if (e.ctrlKey && !e.shiftKey && e.key.toLowerCase() === 's') {
+            e.preventDefault();
+            manualSave();
+        }
+        
+        if (e.ctrlKey && !e.shiftKey && e.key.toLowerCase() === 'n') {
+            e.preventDefault();
+            openAddToolModal();
+        }
+        
+        if (e.ctrlKey && !e.shiftKey && e.key.toLowerCase() === 'f') {
+            e.preventDefault();
+            focusSearch();
+        }
+        
+        if (e.ctrlKey && !e.shiftKey && e.key.toLowerCase() === 'e') {
+            e.preventDefault();
+            openExportModal();
+        }
+        
+        if (e.ctrlKey && !e.shiftKey && e.key.toLowerCase() === 'i') {
+            e.preventDefault();
+            openImportModal();
+        }
+        
+        if (e.ctrlKey && !e.shiftKey && e.key.toLowerCase() === 'b') {
+            e.preventDefault();
+            openBackupModal();
+        }
+        
+        if (e.ctrlKey && !e.shiftKey && e.key.toLowerCase() === 't') {
+            e.preventDefault();
+            toggleTheme();
+        }
+        
+        if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 's') {
+            e.preventDefault();
+            quickExport();
+        }
+        
+        if (e.ctrlKey && !e.shiftKey && e.key.toLowerCase() === 'd') {
+            e.preventDefault();
+            clearAllData();
+        }
+        
+        if (e.key === 'Escape') {
+            document.querySelectorAll('.modal.active').forEach(modal => {
+                modal.classList.remove('active');
+            });
+        }
+    });
+}
+
+
+
+// ============================================================
+// [19] الساعة الحية
+// ============================================================
+
+let clockInterval = null;
+
+function updateClock() {
+    const clockEl = document.getElementById('clockText');
+    if (!clockEl) return;
+    
+    const now = new Date();
+    
+    // تنسيق الوقت بالعربية مع أرقام لاتينية
+    const timeStr = now.toLocaleTimeString('ar-EG-u-nu-latn', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+    });
+    
+    // التاريخ المختصر
+    const dateStr = now.toLocaleDateString('ar-EG-u-nu-latn', {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long'
+    });
+    
+    clockEl.textContent = `${timeStr} — ${dateStr}`;
+}
+
+function startClock() {
+    updateClock();
+    // تحديث كل ثانية
+    clockInterval = setInterval(updateClock, 1000);
+}
+
+// ============================================================
+// [20] تشغيل التطبيق
+// ============================================================
+
+
+
+console.log('✅ تم تحميل كل الكود بنجاح');
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
